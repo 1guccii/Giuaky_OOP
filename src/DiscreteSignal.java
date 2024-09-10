@@ -1,5 +1,5 @@
 // Lớp DiscreteSignal theo định nghĩa tín hiệu rời rạc
-class DiscreteSignal {
+class DiscreteSignal1 {
     // Phương thức tính toán tín hiệu rời rạc x(n)
     public double calculateDiscreteSignal(int n, int[] unitImpulse, int[] inputSignal) {
         double result = 0.0;
