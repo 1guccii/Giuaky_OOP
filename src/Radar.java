@@ -1,16 +1,17 @@
-public class Radar {
-        public double X(int n) {
-            if (n >= 0 && n <= 15) {
-                return 1-(double) n / 15;
-            } else {
-                return 0;
-            }
+class Radar {
+    public double[] analyzeDiscreteSignal(int n) {
+        double[] discreteSignal = new double[16];
+        for (int i = 0; i < 16; i++) {
+            discreteSignal[i] = (i >= 0 && i <= 15) ? (1 - i / 15.0) : 0;
         }
-        public static void main(String[] args) {
-            Radar radar = new Radar();
-            int n = 4;
-                System.out.println("X(" + n + ") = " + radar.X(n));
-            }
+        return discreteSignal;
+    }
+
+    public void printDiscreteSignal(double[] signal) {
+        for (int i = 0; i < signal.length; i++) {
+            System.out.println("x(" + i + ") = " + signal[i]);
         }
+    }
+}
     
     
