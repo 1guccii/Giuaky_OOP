@@ -1,7 +1,11 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        
+<<<<<<< HEAD
+=======
+    public static void main() {
+        Radar radar = new Radar() ;
+        double []  DiscreteSignal = radar.analyzDiscreteSignal(4);
+        radar.printDiscreteSignal(DiscreteSignal);
+>>>>>>> b2b710c6dd3fe4a611dd34db13cbe1d91b6c0d28
     }
 }
+
