@@ -8,9 +8,9 @@ public class Radar {
         }
         public static void main(String[] args) {
             Radar radar = new Radar();
-            for (int n = 0; n <= 20; n++) {
+            int n = 4;
                 System.out.println("X(" + n + ") = " + radar.X(n));
             }
         }
-    }
+    
     
